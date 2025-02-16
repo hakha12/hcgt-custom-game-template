@@ -40,7 +40,8 @@ PROJECT_SOURCE_FILES  ?= \
 	$(PROJECT_SOURCE_PATH)/directory.cpp \
 	$(PROJECT_SOURCE_PATH)/window.cpp \
 	$(PROJECT_SOURCE_PATH)/event.cpp \
-	$(PROJECT_SOURCE_PATH)/state.cpp
+	$(PROJECT_SOURCE_PATH)/state.cpp \
+	$(PROJECT_SOURCE_PATH)/texture.cpp
 
 PROJECT_SCENE_FILES  ?= \
 	$(PROJECT_SCENE_PATH)/scene_template.cpp

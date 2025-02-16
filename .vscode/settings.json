@@ -21,7 +21,9 @@
 		"cinttypes": "cpp",
 		"__locale": "cpp",
 		"expected": "cpp",
-		"unordered_map": "cpp"
+		"unordered_map": "cpp",
+		"typeinfo": "cpp",
+		"cwchar": "cpp"
 	},
 	"makefile.configureOnOpen": true
 }

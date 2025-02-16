@@ -111,7 +111,7 @@ void hcgt::EventManager::_LoadBinding(const std::string& p_filePath){
 	bindingData.open(p_filePath);
 
 	if (!bindingData.is_open()){
-		std::cout << "Failed to open " << p_filePath << std::endl;
+		std::cerr << "Failed to open " << p_filePath << std::endl;
 
 		return;
 	}
