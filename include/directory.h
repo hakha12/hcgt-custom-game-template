@@ -5,17 +5,20 @@
 namespace hcgt {
 
 class Directory {
-	public:
-		Directory();
+public:
+    static void Init();
 
-		const std::string& Get();
-		const std::string& GetAssetPath();
-		const std::string& GetConfigPath();
-	
-	private:
-		std::string m_dir;
-		std::string m_assetDir;
-		std::string m_configDir;
+    static std::string Get();
+    static std::string GetAssetPath();
+    static std::string GetConfigPath();
+
+private:
+    static std::string& Dir();
+    static std::string& AssetDir();
+    static std::string& ConfigDir();
+
+    static std::string separator;
+    static std::string filePath;
 };
 
-}
+} // namespace hcgt

@@ -1,7 +1,11 @@
 #include "../include/engine.h"
 #include "../scenes/scenes.h"
 
-hcgt::Engine::Engine(): m_shared(std::make_shared<Shared>()), m_stateManager(std::make_shared<StateManager>()), m_isDone(false){
+hcgt::Engine::Engine(): m_stateManager(std::make_shared<StateManager>()), m_isDone(false){
+	Directory::Init();
+	
+	m_shared = std::make_shared<Shared>();
+
 	m_shared->m_eventManager->AddCallback(StateType(0) ,"Window_close", &Engine::SetDone, this);
 
 	std::shared_ptr<Scene_Template> scene_template = std::make_shared<Scene_Template>(m_stateManager, m_shared); 

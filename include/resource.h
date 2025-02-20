@@ -81,7 +81,7 @@ class ResourceManager {
 			pathDir.open(p_path);
 
 			if (!pathDir.is_open()){
-				std::cerr << "Failed to open path-to-resource-file.cfg ." << std::endl;
+				std::cerr << "Failed to open " << p_path << std::endl;
 
 				return;
 			}

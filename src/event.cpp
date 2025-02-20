@@ -1,7 +1,10 @@
 #include "../include/event.h"
 
-hcgt::EventManager::EventManager(Directory& p_dir):m_hasFocus(true){
-	_LoadBinding(p_dir.GetConfigPath() + "bindingKey.cfg");
+hcgt::EventManager::EventManager():m_hasFocus(true){
+	std::string bindPath = Directory::GetConfigPath() + "bindingKey.cfg";
+
+	std::cout << bindPath << std::endl;
+	_LoadBinding(bindPath);
 }
 
 hcgt::EventManager::~EventManager(){

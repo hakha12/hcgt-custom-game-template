@@ -90,7 +90,7 @@ struct Binding {
 
 class EventManager {
 	public:
-		EventManager(hcgt::Directory& p_dir);
+		EventManager();
 		~EventManager();
 
 		void HandleEvent(const float& p_windowScale);

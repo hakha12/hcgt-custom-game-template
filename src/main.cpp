@@ -9,6 +9,7 @@ hcgt::Engine engine;
 static void MainLoop();
 
 int main(int argc, char** argv){
+	std::cout << "Start" << std::endl;
 	#if defined(PLATFORM_WEB)
 		emscripten_set_main_loop(MainLoop, 0, 1);
 	#else
